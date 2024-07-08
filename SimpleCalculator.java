@@ -42,7 +42,7 @@ public class SimpleCalculator extends Application {
         Button btDivide = new Button("Divide");
         Button btSqrt = new Button("Square Root"); // New button for square root
 
-        // Event handlers for each button
+     
         btAdd.setOnAction(event -> performOperation(tfNumber1, tfNumber2, tfResult, '+'));
         btSubtract.setOnAction(event -> performOperation(tfNumber1, tfNumber2, tfResult, '-'));
         btMultiply.setOnAction(event -> performOperation(tfNumber1, tfNumber2, tfResult, '*'));
@@ -74,7 +74,7 @@ public class SimpleCalculator extends Application {
         primaryStage.show();
     }
 
-    // Method to perform basic arithmetic operations
+   
     private void performOperation(TextField tfNumber1, TextField tfNumber2, TextField tfResult, char operation) {
         try {
             double num1 = Double.parseDouble(tfNumber1.getText());
